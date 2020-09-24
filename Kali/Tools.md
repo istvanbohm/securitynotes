@@ -9,7 +9,7 @@
 
 ### Start the SMB server
 
-`impacket-smbserver shareName /home/kali/foo/bar/`
+`sudo impacket-smbserver shareName /home/kali/foo/bar/`
 
 ### Check the server status
 
@@ -25,3 +25,15 @@ client max protocol = SMB3
 ### Access to the share from Windows
 
 `\\10.10.10.1\shareName\foobar.exe`
+
+# Listen Incomming SMTP Connections
+
+`sudo python3 -m smtpd -n -c DebuggingServer 0.0.0.0:25`
+
+# Simple HTTP Server
+
+`python3 -m http.server 8080`
+`python -m SimpleHTTPServer 8080`
+
+
+
