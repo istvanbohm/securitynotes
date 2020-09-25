@@ -26,6 +26,9 @@ client max protocol = SMB3
 
 `\\10.10.10.1\shareName\foobar.exe`
 
+## Rsync
+rsync -azP john@10.10.10.1:/home/john/tools ./
+
 # Listen Incomming SMTP Connections
 
 `sudo python3 -m smtpd -n -c DebuggingServer 0.0.0.0:25`
