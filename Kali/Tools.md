@@ -27,7 +27,14 @@ client max protocol = SMB3
 `\\10.10.10.1\shareName\foobar.exe`
 
 ## Rsync
-rsync -azP john@10.10.10.1:/home/john/tools ./
+`rsync -azP john@10.10.10.1:/home/john/tools ./`
+
+## SCP
+
+`scp -r user01@10.10.10.1:~/foo/bar/ .`
+
+`scp user01@10.10.10.1:~/foo/bar/foobar .`
+
 
 # Listen Incomming SMTP Connections
 
