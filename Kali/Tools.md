@@ -45,5 +45,11 @@ client max protocol = SMB3
 `python3 -m http.server 8080`
 `python -m SimpleHTTPServer 8080`
 
+# MISC
 
+# Disable Beep/Bell
+
+remove the beep/bell module
+
+`sudo modprobe -r pcspkr`
 
