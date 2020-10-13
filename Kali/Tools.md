@@ -35,7 +35,6 @@ client max protocol = SMB3
 
 `scp user01@10.10.10.1:~/foo/bar/foobar .`
 
-
 # Listen Incomming SMTP Connections
 
 `sudo python3 -m smtpd -n -c DebuggingServer 0.0.0.0:25`
@@ -47,7 +46,7 @@ client max protocol = SMB3
 
 # MISC
 
-# Disable Beep/Bell
+## Disable Beep/Bell
 
 remove the beep/bell module
 
