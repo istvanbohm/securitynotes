@@ -35,6 +35,10 @@ client max protocol = SMB3
 
 `scp user01@10.10.10.1:~/foo/bar/foobar .`
 
+## Download multiple files listed in a text file
+
+`wget --no-check-certificate -q -i urllist.txt`
+
 # Listen Incomming SMTP Connections
 
 `sudo python3 -m smtpd -n -c DebuggingServer 0.0.0.0:25`
