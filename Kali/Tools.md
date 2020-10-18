@@ -56,3 +56,9 @@ remove the beep/bell module
 
 `sudo modprobe -r pcspkr`
 
+## Configure System Proxy Settings
+
+```
+export http_proxy=http://username:password@127.0.0.1:8080
+export https_proxy=https://username:password@127.0.0.1:8080
+```
