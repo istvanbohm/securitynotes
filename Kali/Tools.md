@@ -62,3 +62,12 @@ remove the beep/bell module
 export http_proxy=http://username:password@127.0.0.1:8080
 export https_proxy=https://username:password@127.0.0.1:8080
 ```
+
+## Beautify Code
+
+### JavaScript
+
+```
+pip install jsbeautifier
+js-beautify app.js > beautified_app.js
+```
