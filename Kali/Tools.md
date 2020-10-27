@@ -39,6 +39,13 @@ client max protocol = SMB3
 
 `wget --no-check-certificate -q -i urllist.txt`
 
+## Mount remote directory
+
+`sshfs john@10.10.10.1:/remote/directory /local/mount/point`
+
+`mount -t cifs -o user=john //10.10.10.1/myshare /local/mount/point`
+
+
 # Listen Incomming SMTP Connections
 
 `sudo python3 -m smtpd -n -c DebuggingServer 0.0.0.0:25`
