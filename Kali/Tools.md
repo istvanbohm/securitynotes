@@ -57,6 +57,9 @@ client max protocol = SMB3
 
 # MISC
 
+## Useful commands
+`ps -aef --forest`
+
 ## Disable Beep/Bell
 
 remove the beep/bell module
