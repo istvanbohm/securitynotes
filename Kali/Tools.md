@@ -81,3 +81,7 @@ export https_proxy=https://username:password@127.0.0.1:8080
 pip install jsbeautifier
 js-beautify app.js > beautified_app.js
 ```
+
+## Convert Recorded Video
+
+`ffmpeg -i "foobar.mp4" -vf yadif -c:v libx264 -crf 23 -pix_fmt yuv420p -preset medium -c:a aac "foobar_wincompatible.mp4"`
