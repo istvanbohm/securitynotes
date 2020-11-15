@@ -45,6 +45,8 @@ client max protocol = SMB3
 
 `mount -t cifs -o user=john //10.10.10.1/myshare /local/mount/point`
 
+`vmhgfs-fuse -o allow_other -o auto_unmount ".host:/vmware/shared/folder" /local/mount/point`
+
 
 # Listen Incomming SMTP Connections
 
