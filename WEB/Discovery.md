@@ -8,6 +8,14 @@
 
 # Wordlists
 
+## Kali
+
+```
+/usr/share/wordlists/dirbuster/directory-list-2.3-small.txt
+/usr/share/wordlists/dirb/common.txt
+/usr/share/wordlists/dirb/big.txt
+```
+
 ## SecLists
 
 https://github.com/danielmiessler/SecLists
