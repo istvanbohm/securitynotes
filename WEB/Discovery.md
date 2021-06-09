@@ -4,7 +4,7 @@
 
 `gobuster dir -k -w ./wordlist.txt -u https://10.10.10.1/foo/bar/ -c PHPSESSID=aaa`
 
-`dirb  https://10.10.10.1/foo/bar/ ./wordlist.txt -c PHPSESSID=aaa`
+`dirb -r https://10.10.10.1/foo/bar/ ./wordlist.txt -c PHPSESSID=aaa`
 
 # Wordlists
 
