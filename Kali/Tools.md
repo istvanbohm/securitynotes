@@ -35,6 +35,8 @@ client max protocol = SMB3
 
 `scp user01@10.10.10.1:~/foo/bar/foobar .`
 
+`scp -i ssh.key -P 2222 user01@10.10.10.1:/foo/bar/foobar  .`
+
 ## Download multiple files listed in a text file
 
 `wget --no-check-certificate -q -i urllist.txt`
